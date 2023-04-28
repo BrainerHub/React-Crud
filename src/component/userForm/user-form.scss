@@ -1,0 +1,173 @@
+.dataTemplate {
+    padding: 70px 10px;
+
+    &__card {
+        border: 1px solid #bbb;
+        border-radius: 12px;
+        overflow: hidden;
+
+        table {
+            border-spacing: 0 8px;
+
+            td,
+            th {
+                min-height: 40px;
+                padding: 8px 16px;
+            }
+
+            thead {
+                th {
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #0a3346;
+                    font-weight: 700;
+                    white-space: nowrap;
+                    vertical-align: middle;
+                    height: 45px;
+                }
+            }
+
+            td {
+                font-size: 14px;
+                line-height: 16px;
+                color: #667b8d;
+                font-weight: 600;
+                vertical-align: middle;
+
+                .btn {
+                    margin: 0;
+                    padding: 7px 15px;
+                    box-sizing: border-box;
+                    font-size: 14px;
+                    line-height: 16px;
+                    border-radius: 10px;
+                    font-weight: 600;
+                }
+            }
+
+            tbody {
+                tr {
+                    background-color: #d9e4ef;
+                    border-radius: 13px;
+                    overflow: hidden;
+
+                    &:nth-child(even) {
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    &__header {
+        background: #145c7e;
+        padding: 15px 15px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 20px;
+        line-height: 26px;
+        color: #fff;
+        margin: 0;
+    }
+
+    &__body {
+        padding: 18px;
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        font-size: 12px;
+        line-height: 16px;
+        margin: 0 0 5px;
+        color: #667b8d;
+        font-weight: 600;
+        display: block;
+    }
+
+    .form-control,
+    .form-check-label {
+        font-size: 14px;
+        line-height: 18px;
+        color: #0a3346;
+        font-weight: 600;
+        padding: 8px 12px;
+    }
+
+    .form-check {
+        display: inline-flex;
+        align-items: center;
+        margin: 0;
+        margin-right: 15px;
+
+        .form-check-label {
+            padding: 8px 6px;
+        }
+    }
+
+    &__form-btn {
+        margin-top: 20px;
+        text-align: right;
+
+        .btn {
+            margin: 0;
+            padding: 8px 22px;
+            box-sizing: border-box;
+            font-size: 14px;
+            line-height: 18px;
+            min-width: 150px;
+            background: #145c7e;
+            border: 2px solid #145c7e;
+            border-radius: 10px;
+            color: #fff !important;
+        }
+    }
+
+    .blank-data {
+        font-size: 20px;
+        line-height: 26px;
+        color: #000;
+        margin: 0;
+    }
+
+    .blank-data {
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+        color: #667b8d;
+        font-weight: 600;
+        margin: 20px 0;
+    }
+
+    .error-text {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 600;
+        display: block;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .dataTemplate {
+        padding: 50px 10px 30px;
+
+        &__card {
+            margin-bottom: 30px;
+        }
+    }
+}
